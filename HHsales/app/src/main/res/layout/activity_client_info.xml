@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/client_info_page">
+    <RelativeLayout
+        android:id="@+id/rl_client_info_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="5dp"
+        android:gravity="center_vertical"
+        android:paddingRight="10dp"
+        android:background="@color/theme_color">
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_return"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/cancle" />
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="客户信息"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_client_info_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+    <com.example.lib_common.view.EmptyLayout
+        android:id="@+id/el_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:elEmptyLayout="@layout/empty_layout"
+        app:elLoadingLayout="@layout/loading_layout"
+        app:elErrorLayout="@layout/error_layout"
+        >
+    <ScrollView
+        android:id="@+id/scro_client"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <include
+            android:id="@+id/client_info_context"
+            layout="@layout/client_info_context" />
+
+    </ScrollView>
+    </com.example.lib_common.view.EmptyLayout>
+</LinearLayout>

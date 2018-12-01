@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/client_info_page"
+
+    android:orientation="vertical">
+    <RelativeLayout
+        android:id="@+id/rl_add_purchase_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp"
+        android:background="@color/theme_color">
+
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:id="@+id/iv_return"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@mipmap/cancle" />
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:text="新增意向"
+            android:textSize="18dp" />
+        <TextView
+            android:id="@+id/tv_client_info_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="10dp"
+    android:background="@drawable/table_shape"
+    android:orientation="vertical"
+    android:paddingBottom="2dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/update_purchase_area"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="意向面积："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/tv_update_purchase_area_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="------"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/tv_update_purchase_area_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/bac_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="意向价格："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/tv_update_purchase_price_first"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center"
+            android:textSize="15dp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="------"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center_vertical"
+            android:textSize="15dp" />
+        <EditText
+            android:id="@+id/tv_update_purchase_price_next"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/bac_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/update_purchase_room_type"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="意向房型："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_update_purchase_room_type"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center_vertical"
+            android:hint="请选择意向房型"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_update_purchase_room_type"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@mipmap/down" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/bac_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/update_purchase_room"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="意向房间："
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_update_purchase_room"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/shape_clueadd_frame"
+            android:gravity="center_vertical"
+            android:hint="请输入意向房间"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/iv_update_purchase_room"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:src="@drawable/sousuo" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/v_h"
+            android:gravity="center"
+            android:text="清空"
+            android:textSize="15dp" />
+
+        <View
+            android:id="@+id/v_h"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/bac_gray" />
+
+        <TextView
+            android:id="@+id/tv_save_purchase"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@id/v_h"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="15dp" />
+    </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:background="@color/client_info_page">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:id="@+id/rl_a"
+        android:background="#FFFFFF"
+        android:paddingLeft="15dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:text="唐港港"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_b"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_a"
+        android:background="#FFFFFF"
+        android:layout_marginTop="1dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp">
+
+        <View
+            android:id="@+id/strut"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginLeft="300dp"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/client_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="联系电话:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/strut"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/client_phone"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/client_ry_group"
+            android:layout_toRightOf="@+id/strut"
+            android:gravity="right"
+            android:text="性&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;别:"
+            android:layout_marginLeft="12dp"
+
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/client_sex"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/client_phone"
+            android:layout_below="@+id/tv_client_phone"
+            android:layout_marginTop="14dp"
+            android:text="所属项目:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_project"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/strut"
+            android:layout_alignTop="@+id/client_project"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/client_project"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_client_phone"
+            android:layout_alignRight="@+id/client_ry_group"
+            android:layout_marginTop="14dp"
+            android:layout_toRightOf="@+id/strut"
+            android:layout_marginLeft="12dp"
+
+            android:gravity="right"
+            android:text="业&#160;&#160;务&#160;&#160;员:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_salesman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/client_salesman"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/client_salesman"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_follow_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_project"
+            android:layout_marginTop="14dp"
+            android:text="跟进阶段:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_follow_stage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/client_follow_stage"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/client_follow_stage"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_ry_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_salesman"
+            android:layout_marginTop="14dp"
+            android:layout_marginLeft="12dp"
+
+            android:layout_toRightOf="@+id/strut"
+            android:text="客户分组:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_ry_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+
+            android:layout_alignTop="@+id/client_ry_group"
+            android:layout_toRightOf="@+id/client_ry_group"
+            android:text=""
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/client_last_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/client_follow_stage"
+            android:layout_marginTop="14dp"
+            android:text="最后联系时间:"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/tv_client_last_contact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_alignTop="@+id/client_last_contact"
+            android:layout_toRightOf="@+id/client_last_contact"
+            android:text=""
+            android:textSize="15dp" />
+    </RelativeLayout>
+</RelativeLayout>

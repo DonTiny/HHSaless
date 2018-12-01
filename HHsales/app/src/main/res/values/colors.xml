@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tab_background">#F1F1F1</color>
+    <color name="tab_text_color">#8a8a8a</color>
+    <color name="tab_top_border">#D0CFCF</color>
+    <color name="tab_text_select_color">#1296db</color>
+    <color name="theme_color">#3cb9fc</color>
+    <color name="client_info_page">#F0EFF5</color>
+
+    <!-- 时间日期选择器 -->
+    <color name="white">#ffffff</color>
+    <color name="transparent">#00000000</color>
+    <color name="topbar_3">#339EFE</color>
+    <color name="line">#dddddd</color>
+    <color name="text_10">#333333</color>
+    <color name="text_11">#999999</color>
+    <color name="gray_bg">#f8f8f8</color>
+</resources>

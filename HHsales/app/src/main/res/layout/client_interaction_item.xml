@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_client_interaction_type"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:textColor="@color/white"
+        android:text="来电"/>
+    <TextView
+        android:id="@+id/tv_client_follow_stage"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_client_interaction_type"
+        android:text="转客户"/>
+
+    <TextView
+        android:id="@+id/tv_client_interaction_text"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_client_follow_stage"
+        android:text="交互内容"/>
+    <TextView
+        android:id="@+id/tv_client_interaction_time"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+
+        android:text="交互时间"/>
+    <TextView
+        android:id="@+id/tv_client_next_interaction_time"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_client_interaction_text"
+        android:layout_toRightOf="@+id/xiaci" />
+    <TextView
+        android:id="@+id/xiaci"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_client_interaction_text"
+        android:text="下次交互:"/>
+    <TextView
+        android:id="@+id/tv_client_salesman"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_client_interaction_text"
+        android:layout_alignParentRight="true"
+        android:text="业务员"/>
+</RelativeLayout>

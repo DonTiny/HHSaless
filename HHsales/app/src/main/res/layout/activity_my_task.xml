@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.hhsales.zzxinteyu.hhsales.my.ui.MyTaskActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_my_task_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/theme_color"
+        android:gravity="center_vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+
+        <ImageView
+            android:id="@+id/iv_return"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:src="@mipmap/cancle" />
+
+        <TextView
+            android:id="@+id/tv_client_info_delet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="我的任务"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+    <com.example.lib_common.view.EmptyLayout
+        android:id="@+id/el_my_task_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:elEmptyLayout="@layout/empty_layout"
+        app:elLoadingLayout="@layout/loading_layout"
+        app:elErrorLayout="@layout/error_layout"
+        >
+        <com.jwenfeng.library.pulltorefresh.PullToRefreshLayout
+            android:id="@+id/prl_my_task"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_my_task"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+        </com.jwenfeng.library.pulltorefresh.PullToRefreshLayout>
+    </com.example.lib_common.view.EmptyLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_update_purchase_area_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:text="意向面积" />
+    <TextView
+        android:id="@+id/tv_update_purchase_price_item"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/tv_update_purchase_area_item"
+        android:text="意向价格"/>
+
+    <TextView
+        android:id="@+id/tv_update_purchase_room_item"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update_purchase_price_item"
+        android:text="意向房间"/>
+
+
+    <TextView
+        android:id="@+id/tv_update_purchase_room_type_item"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update_purchase_room_item"
+        android:text="意向房型"/>
+    <TextView
+        android:id="@+id/tv_update_purchase_state_item"
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_update_purchase_room_item"
+        android:layout_alignParentRight="true"
+        android:text="业务员"/>
+</RelativeLayout>
+
+
+
+
+

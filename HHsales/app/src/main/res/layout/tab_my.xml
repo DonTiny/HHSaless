@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:item="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_gd"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_my"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/theme_color"
+        android:elevation="2dp"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingRight="10dp">
+
+        <TextView
+            android:id="@+id/tv_client_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="个人中心"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/h_back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />
+
+        <ImageView
+            android:id="@+id/h_head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/h_back"
+            android:layout_marginBottom="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="25dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="@color/white" />
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/user_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/user_line"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <com.hhsales.zzxinteyu.hhsales.view.MyItemView
+        android:id="@+id/mtv_my_task"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        item:left_icon="@drawable/woderenwu"
+        item:left_image_size="35dp"
+        item:left_text="我的任务"
+        item:right_text=""></com.hhsales.zzxinteyu.hhsales.view.MyItemView>
+
+    <com.hhsales.zzxinteyu.hhsales.view.MyItemView
+        android:id="@+id/mtv_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        item:left_icon="@mipmap/gerenziliao"
+        item:left_image_size="35dp"
+        item:left_text="个人资料"
+        item:right_text=""></com.hhsales.zzxinteyu.hhsales.view.MyItemView>
+
+    <com.hhsales.zzxinteyu.hhsales.view.MyItemView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        item:left_icon="@mipmap/shezhi"
+        item:left_image_size="35dp"
+        item:left_text="设置"
+        item:right_text=""></com.hhsales.zzxinteyu.hhsales.view.MyItemView>
+
+    <com.hhsales.zzxinteyu.hhsales.view.MyItemView
+        android:layout_width="match_parent"
+        android:id="@+id/detection_update"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        item:left_icon="@mipmap/gengxin"
+        item:left_image_size="35dp"
+        item:left_text="检测更新"
+        item:right_text="">
+
+    </com.hhsales.zzxinteyu.hhsales.view.MyItemView>
+
+    <com.hhsales.zzxinteyu.hhsales.view.MyItemView
+        android:id="@+id/mtv_log_out"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="1dp"
+        android:background="@color/white"
+        android:padding="10dp"
+        item:left_icon="@drawable/tuichu"
+        item:left_image_size="35dp"
+        item:left_text="退出"
+        item:right_text=""></com.hhsales.zzxinteyu.hhsales.view.MyItemView>
+</LinearLayout>

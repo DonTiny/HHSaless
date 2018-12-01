@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemView">
+        <attr name="left_icon" format="reference"/>//设置左侧图标
+        <attr name="show_left_icon" format="boolean"/>//是否显示左侧图标
+        <attr name="left_image_size" format="dimension"/>//左侧图片大小
+        <attr name="right_image_size" format="dimension"/>//右侧图片大小
+        <attr name="text_size" format="dimension"/>//文字大小
+        <attr name="left_text" format="string"/>//左侧标题文字
+        <attr name="left_text_color" format="color"/>
+        <attr name="right_text" format="string"/>//右侧描述文字
+        <attr name="show_right_arrow" format="boolean"/>//是否显示右侧小箭头
+        <attr name="show_bottom_line" format="boolean"/>//是否显示下划线
+    </declare-styleable>
+    <item name="left_icon_id" type="id" />
+    <item name="right_icon_id" type="id" />
+</resources>
